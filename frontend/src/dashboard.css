@@ -1,0 +1,55 @@
+
+
+#root{
+  width:95vw;
+  color:white;
+  overflow: visible;
+  margin:auto;
+
+}
+
+header{
+    border:1px solid white;
+    background: linear-gradient(90deg, #6a5acd, #b300ff);
+    border-radius:20px;
+    text-align: center;
+}
+
+#main-product-div{
+    overflow: visible;
+    height:fit-content;
+}
+
+#summary{
+    width: 100vw;
+    height:100px;
+    justify-content: space-around;
+    display: flex;
+    align-content: center;
+
+}
+
+#summary h2{
+    display: inline-block;
+    height:50px;
+}
+
+#summary button{
+    display: inline-block;
+    padding:10px 20px;
+    border-radius:10px;
+    height:70px;
+}
+
+#table-container{
+    width:95vw;
+    height:fit-content;
+    overflow: visible;
+}
+
+table{
+    border:1px solid white;
+    width: 100%;
+    margin:auto;
+    table-layout: fixed;
+}

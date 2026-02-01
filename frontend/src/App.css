@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: #242424;
+}
+#home-page {
+  background-color: #242424;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+
+input{
+  background-color: #000000;
+  color: #fff;
+  margin-top:40vh;
+  margin-left:15vw;
+  font-size:15px;
+  border-radius:7px;
+  border:1px solid white;
+  height:40px;
+  width:300px;
+  font-family:"Poppins", sans-serif;
+}
+
+input:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+
+
+
+
+button{
+  border:1px solid white;
+  background: linear-gradient(90deg, #6a5acd, #b300ff);
+  display:block;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-left:15vw;
+  margin-top: 20px;
+  color:white;
+  font-size: larger;
+  font-family: "Poppins", sans-serif;
+
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px rgba(150, 0, 255, 0.6);
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+
+#box{
+  height:1200px;
+  width:1000px;
+  transform:rotate(50deg);
+  position:absolute;
+  top:15vh;
+  left:60vw;
+  background:radial-gradient(rgb(182, 17, 241),rgb(13, 0, 255));
+  animation: slide 1s ;
+}
+
+#project-desc{
+  position: absolute;
+  top:50vh;
+  left:68vw;
+  overflow: visible;
+  height:fit-content;
+  width: 400px;
+  background-color: white;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;  
+  animation:intro 1s ease-out;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+#project-desc p{
+  margin-left:1%;
+}
+
+#project-desc h1{
+  margin-left:20px;
+}
+
+
+
+@keyframes slide{
+  0%{
+     top:150vh;
+     left:150vw;
+  }
+  100%{
+    top:15vh;
+    left:60vw;
+  }
+}
+
+@keyframes intro{
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0px); }
+}
+
+.loader {
+  border: 6px solid #444;
+  border-top: 6px solid #9b3eff; 
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  animation: spin 1s linear infinite;
+  margin-left:22px;
+  margin-right: 18px;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

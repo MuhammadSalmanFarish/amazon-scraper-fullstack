@@ -1,0 +1,7 @@
+Flask
+flask-cors
+selenium
+beautifulsoup4
+pandas
+openpyxl
+pymysql
